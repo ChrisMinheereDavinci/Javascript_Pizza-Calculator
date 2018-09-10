@@ -12,12 +12,11 @@ var totallarge = large * 11.70;
 //Aantal piza's totaal.
 var totalprize = totalsmall + totalmedium + totallarge;
 
-
 document.write('Kleine pizza prijs: \u20ac ' +4.20 * small + '<br>');  //schrijf bedrag en text naar scherm
 document.write('Normaale pizza prijs: \u20ac ' +6.90 * medium + '<br>');
 document.write('Groote pizza prijs: \u20ac ' + 11.70 * large + '<br>');
 
-document.write('<br> Aantal kleine pizzas ' + small + '<br> Aantal Normaale pizzas ' + medium + '<br> Aantal Groote pizzas ' + large + '<br>'); 
+document.write('<br> Aantal kleine pizzas ' + small + '<br> Aantal Normaale pizzas ' + medium + '<br> Aantal Groote pizzas ' + large + '<br>'); //schrijf de waarde van het aantal pizza's naar het scherm.
 
 //schrijft de totaal stant naar scherm.
 document.write('<br> Totaal prijs: \u20ac ' + totalprize);

@@ -1,39 +1,23 @@
-alert("Er worden 3 vragen aan u gesteld. Deze graag juist invoeren. als u hier niet me akoord gaat kunt u op annuleren klikken. ")
+
+//maak een variable aan met de piza grotes en laat dat zien in een promt.
+var small = prompt('aantal kleine pizzas'); 
+var medium = prompt('aantal middel pizzas');
+var large = prompt('aantal groote pizzas');
+
+//Berekening hoeveel de aantal pizza grotes bij elkaar kosten.
+var totalsmall = small * 4.20;      //prijs piza is en variable
+var totalmedium = medium * 6.90;
+var totallarge = large * 11.70;
+
+//Aantal piza's totaal.
+var totalprize = totalsmall + totalmedium + totallarge;
 
 
-function myFunction() {
-    var txt;
+document.write('Kleine pizza prijs: \u20ac ' +4.20 * small + '<br>');  //schrijf bedrag en text naar scherm
+document.write('Normaale pizza prijs: \u20ac ' +6.90 * medium + '<br>');
+document.write('Groote pizza prijs: \u20ac ' + 11.70 * large + '<br>');
 
+document.write('<br> Aantal kleine pizzas ' + small + '<br> Aantal Normaale pizzas ' + medium + '<br> Aantal Groote pizzas ' + large + '<br>'); 
 
-    var person = prompt("Please enter your name:", "");
-
-    if (person == null || person == "") {
-        txt = "User cancelled the prompt.";
-    } else {
-        txt = "name: " + person + "";
-    }
-    document.getElementById("name").innerHTML = txt;
-
-
-    var person = prompt("Please enter your last name:", "");
-    if (person == null || person == "") {
-        txt = "User cancelled the prompt.";
-    } else {
-        txt = "last name: " + person + "";
-    }
-    document.getElementById("last name").innerHTML = txt;
-
-
-    var person = prompt("Please enter your Age:", "");
-    if (person == null || person == "") {
-        txt = "User cancelled the prompt.";
-    } else {
-        txt = "age: " + person + "";
-    }
-    document.getElementById("age").innerHTML = txt;
-}
-
-function my1Function() {
-    var x = document.getElementById("mySelect").value;
-    document.getElementById("demo").innerHTML = "You selected: " + x;
-}
+//schrijft de totaal stant naar scherm.
+document.write('<br> Totaal prijs: \u20ac ' + totalprize);
